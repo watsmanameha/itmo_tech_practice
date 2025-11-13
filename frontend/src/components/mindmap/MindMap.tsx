@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactFlow, {
   Node,
   Edge,
@@ -10,7 +10,6 @@ import ReactFlow, {
   BackgroundVariant,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
-import { Term } from '../../types/term';
 import { termsApi } from '../../services/api';
 import CustomNode from './CustomNode';
 import dagre from 'dagre';
