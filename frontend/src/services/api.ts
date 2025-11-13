@@ -23,7 +23,10 @@ const loadStaticData = async (): Promise<{ terms: Record<string, Term> }> => {
   }
 
   try {
-    const response = await fetch('/data/glossary.json');
+    // Используем базовый путь из Vite config для корректной работы на GitHub Pages
+    const basePath = import.meta.env.BASE_URL || '/';
+    const dataPath = `${basePath}data/glossary.json`.replace(/\/+/g, '/');
+    const response = await fetch(dataPath);
     staticDataCache = await response.json();
     return staticDataCache!;
   } catch (error) {
