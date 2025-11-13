@@ -1,0 +1,201 @@
+{
+  "terms": {
+    "singleton": {
+      "id": "singleton",
+      "term": "Singleton",
+      "definition": "Порождающий паттерн проектирования, который гарантирует, что у класса есть только один экземпляр, и предоставляет к нему глобальную точку доступа",
+      "category": "Порождающие паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "abstract_factory": {
+      "id": "abstract_factory",
+      "term": "Abstract Factory",
+      "definition": "Порождающий паттерн проектирования, который позволяет создавать семейства связанных объектов, не привязываясь к конкретным классам создаваемых объектов",
+      "category": "Порождающие паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        },
+        {
+          "target_term_id": "factory_method",
+          "relation_type": "связан с",
+          "description": null
+        }
+      ]
+    },
+    "factory_method": {
+      "id": "factory_method",
+      "term": "Factory Method",
+      "definition": "Порождающий паттерн проектирования, который определяет общий интерфейс для создания объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов",
+      "category": "Порождающие паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "strategy": {
+      "id": "strategy",
+      "term": "Strategy",
+      "definition": "Поведенческий паттерн проектирования, который определяет семейство алгоритмов, инкапсулирует каждый из них и делает их взаимозаменяемыми",
+      "category": "Поведенческие паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "observer": {
+      "id": "observer",
+      "term": "Observer",
+      "definition": "Поведенческий паттерн проектирования, который создает механизм подписки, позволяющий одним объектам следить и реагировать на события, происходящие в других объектах",
+      "category": "Поведенческие паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "decorator": {
+      "id": "decorator",
+      "term": "Decorator",
+      "definition": "Структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные обёртки",
+      "category": "Структурные паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "adapter": {
+      "id": "adapter",
+      "term": "Adapter",
+      "definition": "Структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе",
+      "category": "Структурные паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "composite": {
+      "id": "composite",
+      "term": "Composite",
+      "definition": "Структурный паттерн проектирования, который позволяет сгруппировать объекты в древовидную структуру, а затем работать с ними так, как будто это единичный объект",
+      "category": "Структурные паттерны",
+      "relations": [
+        {
+          "target_term_id": "gof_patterns",
+          "relation_type": "является частью",
+          "description": null
+        }
+      ]
+    },
+    "ast": {
+      "id": "ast",
+      "term": "Abstract Syntax Tree (AST)",
+      "definition": "Древовидное представление абстрактной синтаксической структуры исходного кода, используемое в статическом анализе для распознавания паттернов проектирования",
+      "category": "Анализ кода",
+      "relations": [
+        {
+          "target_term_id": "static_analysis",
+          "relation_type": "используется в",
+          "description": null
+        },
+        {
+          "target_term_id": "gnn",
+          "relation_type": "преобразуется в",
+          "description": null
+        }
+      ]
+    },
+    "gnn": {
+      "id": "gnn",
+      "term": "Graph Neural Network (GNN)",
+      "definition": "Класс нейронных сетей для обработки данных, представленных в виде графов, применяется для анализа AST и распознавания паттернов в коде",
+      "category": "Machine Learning",
+      "relations": [
+        {
+          "target_term_id": "embeddings",
+          "relation_type": "создает",
+          "description": null
+        },
+        {
+          "target_term_id": "static_analysis",
+          "relation_type": "используется в",
+          "description": null
+        }
+      ]
+    },
+    "embeddings": {
+      "id": "embeddings",
+      "term": "Code Embeddings",
+      "definition": "Векторные представления фрагментов кода, полученные с помощью моделей машинного обучения (CodeLlama, DeepSeek Coder), используются для семантического анализа и распознавания паттернов",
+      "category": "Machine Learning",
+      "relations": [
+        {
+          "target_term_id": "feature_extraction",
+          "relation_type": "является результатом",
+          "description": null
+        }
+      ]
+    },
+    "static_analysis": {
+      "id": "static_analysis",
+      "term": "Static Code Analysis",
+      "definition": "Метод анализа программного кода без его выполнения, включающий построение AST, анализ зависимостей и извлечение структурных характеристик для распознавания паттернов проектирования",
+      "category": "Анализ кода",
+      "relations": [
+        {
+          "target_term_id": "feature_extraction",
+          "relation_type": "включает в себя",
+          "description": null
+        }
+      ]
+    },
+    "feature_extraction": {
+      "id": "feature_extraction",
+      "term": "Feature Extraction",
+      "definition": "Процесс извлечения признаков из исходного кода для последующего использования в ML-моделях распознавания паттернов, включает метрики кода, структурные характеристики и семантическую информацию",
+      "category": "Machine Learning",
+      "relations": [
+        {
+          "target_term_id": "embeddings",
+          "relation_type": "производит",
+          "description": null
+        }
+      ]
+    },
+    "gof_patterns": {
+      "id": "gof_patterns",
+      "term": "GoF Design Patterns",
+      "definition": "23 классических паттерна проектирования из книги Gang of Four, разделенные на три категории: порождающие, структурные и поведенческие паттерны",
+      "category": "Паттерны проектирования",
+      "relations": [
+        {
+          "target_term_id": "static_analysis",
+          "relation_type": "распознается через",
+          "description": null
+        }
+      ]
+    }
+  }
+}
