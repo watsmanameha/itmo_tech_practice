@@ -100,14 +100,35 @@ const MindMap: React.FC = () => {
       );
 
       // Подсвечиваем связанные связи
+      // Группируем связи по паре узлов для объединения labels
+      const connectedEdgeLabels = new Map<string, string[]>();
+      edges.forEach((edge) => {
+        const isConnected =
+          edge.source === hoveredNodeId || edge.target === hoveredNodeId;
+        if (isConnected && edge.data?.originalLabel) {
+          const key = `${edge.source}-${edge.target}`;
+          if (!connectedEdgeLabels.has(key)) {
+            connectedEdgeLabels.set(key, []);
+          }
+          connectedEdgeLabels.get(key)!.push(edge.data.originalLabel);
+        }
+      });
+
       setEdges((eds) =>
-        eds.map((edge) => {
+        eds.map((edge, index) => {
           const isConnected =
             edge.source === hoveredNodeId || edge.target === hoveredNodeId;
+          const key = `${edge.source}-${edge.target}`;
+          const labels = connectedEdgeLabels.get(key) || [];
+
+          // Показываем label только на первой связи между узлами
+          const isFirstEdge = isConnected && labels.length > 0 &&
+            edges.findIndex(e => e.source === edge.source && e.target === edge.target) === index;
+
           return {
             ...edge,
             animated: isConnected,
-            label: isConnected ? (edge.data?.originalLabel || '') : '',
+            label: isFirstEdge ? labels.join(', ') : '',
             style: {
               stroke: isConnected ? '#be185d' : '#e5e7eb',
               strokeWidth: isConnected ? 3 : 1,

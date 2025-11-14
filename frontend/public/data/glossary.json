@@ -176,13 +176,7 @@
       "term": "Feature Extraction",
       "definition": "Процесс извлечения признаков из исходного кода для последующего использования в ML-моделях распознавания паттернов, включает метрики кода, структурные характеристики и семантическую информацию",
       "category": "Machine Learning",
-      "relations": [
-        {
-          "target_term_id": "embeddings",
-          "relation_type": "производит",
-          "description": null
-        }
-      ]
+      "relations": []
     },
     "gof_patterns": {
       "id": "gof_patterns",
