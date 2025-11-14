@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onViewChange, userName = "
                   : 'bg-white text-gray-700 hover:bg-gray-100'
               }`}
             >
-              📖 Глоссарий
+              Глоссарий
             </button>
             <button
               onClick={() => onViewChange('mindmap')}
@@ -35,13 +35,20 @@ const Header: React.FC<HeaderProps> = ({ currentView, onViewChange, userName = "
                   : 'bg-white text-gray-700 hover:bg-gray-100'
               }`}
             >
-              🔗 Семантический граф
+              Семантический граф
             </button>
           </div>
 
           {/* Right side - Logo and User */}
           <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold">ИТМО</div>
+            <a
+              href="https://itmo.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl font-bold hover:opacity-80 transition-opacity"
+            >
+              ИТМО
+            </a>
             <div
               className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
               onClick={handleUserClick}

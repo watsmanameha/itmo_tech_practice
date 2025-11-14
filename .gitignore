@@ -70,3 +70,5 @@ htmlcov/
 # Build artifacts
 *.egg-info/
 pip-log.txt
+
+.venv/

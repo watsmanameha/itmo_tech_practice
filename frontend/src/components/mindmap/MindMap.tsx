@@ -70,6 +70,7 @@ const MindMap: React.FC = () => {
         eds.map((edge) => ({
           ...edge,
           animated: false,
+          label: '',
           style: { stroke: '#9d174d', strokeWidth: 2 },
         }))
       );
@@ -106,6 +107,7 @@ const MindMap: React.FC = () => {
           return {
             ...edge,
             animated: isConnected,
+            label: isConnected ? edge.label : '',
             style: {
               stroke: isConnected ? '#be185d' : '#e5e7eb',
               strokeWidth: isConnected ? 3 : 1,
