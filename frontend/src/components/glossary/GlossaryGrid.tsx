@@ -3,6 +3,7 @@ import { Term } from '../../types/term';
 import { termsApi } from '../../services/api';
 import TermCard from './TermCard';
 import SearchFilter from './SearchFilter';
+import TermModal from './TermModal';
 
 const GlossaryGrid: React.FC = () => {
   const [terms, setTerms] = useState<Term[]>([]);
@@ -10,6 +11,7 @@ const GlossaryGrid: React.FC = () => {
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [selectedTerm, setSelectedTerm] = useState<Term | null>(null);
+  const [modalTerm, setModalTerm] = useState<Term | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -63,6 +65,7 @@ const GlossaryGrid: React.FC = () => {
 
   const handleTermClick = (term: Term) => {
     setSelectedTerm(selectedTerm?.id === term.id ? null : term);
+    setModalTerm(term);
   };
 
   if (loading) {
@@ -105,6 +108,13 @@ const GlossaryGrid: React.FC = () => {
         <div className="text-center py-12 text-gray-500">
           Термины не найдены
         </div>
+      )}
+
+      {modalTerm && (
+        <TermModal
+          term={modalTerm}
+          onClose={() => setModalTerm(null)}
+        />
       )}
     </div>
   );
