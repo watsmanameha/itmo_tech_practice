@@ -107,7 +107,7 @@ const MindMap: React.FC = () => {
           return {
             ...edge,
             animated: isConnected,
-            label: isConnected ? edge.label : '',
+            label: isConnected ? (edge.data?.originalLabel || '') : '',
             style: {
               stroke: isConnected ? '#be185d' : '#e5e7eb',
               strokeWidth: isConnected ? 3 : 1,
@@ -146,7 +146,8 @@ const MindMap: React.FC = () => {
             id: `${term.id}-${relation.target_term_id}`,
             source: term.id,
             target: relation.target_term_id,
-            label: relation.relation_type,
+            label: '',
+            data: { originalLabel: relation.relation_type },
             type: 'smoothstep',
             animated: false,
             style: { stroke: '#9d174d', strokeWidth: 2 },
