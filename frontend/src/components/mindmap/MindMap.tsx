@@ -51,10 +51,70 @@ const MindMap: React.FC = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [loading, setLoading] = useState(true);
+  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
 
   useEffect(() => {
     loadGraphData();
   }, []);
+
+  useEffect(() => {
+    if (!hoveredNodeId) {
+      // Сбрасываем подсветку
+      setNodes((nds) =>
+        nds.map((node) => ({
+          ...node,
+          data: { ...node.data, isHighlighted: false },
+        }))
+      );
+      setEdges((eds) =>
+        eds.map((edge) => ({
+          ...edge,
+          animated: false,
+          style: { stroke: '#9d174d', strokeWidth: 2 },
+        }))
+      );
+    } else {
+      // Находим связанные узлы
+      const connectedNodeIds = new Set<string>();
+      connectedNodeIds.add(hoveredNodeId);
+
+      edges.forEach((edge) => {
+        if (edge.source === hoveredNodeId) {
+          connectedNodeIds.add(edge.target);
+        }
+        if (edge.target === hoveredNodeId) {
+          connectedNodeIds.add(edge.source);
+        }
+      });
+
+      // Подсвечиваем связанные узлы
+      setNodes((nds) =>
+        nds.map((node) => ({
+          ...node,
+          data: {
+            ...node.data,
+            isHighlighted: connectedNodeIds.has(node.id),
+          },
+        }))
+      );
+
+      // Подсвечиваем связанные связи
+      setEdges((eds) =>
+        eds.map((edge) => {
+          const isConnected =
+            edge.source === hoveredNodeId || edge.target === hoveredNodeId;
+          return {
+            ...edge,
+            animated: isConnected,
+            style: {
+              stroke: isConnected ? '#be185d' : '#e5e7eb',
+              strokeWidth: isConnected ? 3 : 1,
+            },
+          };
+        })
+      );
+    }
+  }, [hoveredNodeId, setNodes, setEdges, edges]);
 
   const loadGraphData = async () => {
     try {
@@ -68,7 +128,10 @@ const MindMap: React.FC = () => {
         type: 'custom',
         data: {
           label: term.term,
-          isCenter: term.id === 'электронный_документ', // Центральный узел
+          isCenter: term.id === 'gof_patterns', // Центральный узел
+          isHighlighted: false,
+          onMouseEnter: (id: string) => setHoveredNodeId(id),
+          onMouseLeave: () => setHoveredNodeId(null),
         },
         position: { x: 0, y: 0 }, // Будет пересчитано
       }));
