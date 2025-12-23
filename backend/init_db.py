@@ -11,7 +11,7 @@ def create_initial_data():
     terms = {
         "singleton": {
             "id": "singleton",
-            "term": "Singleton",
+            "term": "Одиночка (Singleton)",
             "definition": "Порождающий паттерн проектирования, который гарантирует, что у класса есть только один экземпляр, и предоставляет к нему глобальную точку доступа",
             "category": "Порождающие паттерны",
             "relations": [
@@ -24,7 +24,7 @@ def create_initial_data():
         },
         "abstract_factory": {
             "id": "abstract_factory",
-            "term": "Abstract Factory",
+            "term": "Абстрактная фабрика (Abstract Factory)",
             "definition": "Порождающий паттерн проектирования, который позволяет создавать семейства связанных объектов, не привязываясь к конкретным классам создаваемых объектов",
             "category": "Порождающие паттерны",
             "relations": [
@@ -42,7 +42,7 @@ def create_initial_data():
         },
         "factory_method": {
             "id": "factory_method",
-            "term": "Factory Method",
+            "term": "Фабричный метод (Factory Method)",
             "definition": "Порождающий паттерн проектирования, который определяет общий интерфейс для создания объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов",
             "category": "Порождающие паттерны",
             "relations": [
@@ -55,7 +55,7 @@ def create_initial_data():
         },
         "strategy": {
             "id": "strategy",
-            "term": "Strategy",
+            "term": "Стратегия (Strategy)",
             "definition": "Поведенческий паттерн проектирования, который определяет семейство алгоритмов, инкапсулирует каждый из них и делает их взаимозаменяемыми",
             "category": "Поведенческие паттерны",
             "relations": [
@@ -68,7 +68,7 @@ def create_initial_data():
         },
         "observer": {
             "id": "observer",
-            "term": "Observer",
+            "term": "Наблюдатель (Observer)",
             "definition": "Поведенческий паттерн проектирования, который создает механизм подписки, позволяющий одним объектам следить и реагировать на события, происходящие в других объектах",
             "category": "Поведенческие паттерны",
             "relations": [
@@ -81,7 +81,7 @@ def create_initial_data():
         },
         "decorator": {
             "id": "decorator",
-            "term": "Decorator",
+            "term": "Декоратор (Decorator)",
             "definition": "Структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные обёртки",
             "category": "Структурные паттерны",
             "relations": [
@@ -94,7 +94,7 @@ def create_initial_data():
         },
         "adapter": {
             "id": "adapter",
-            "term": "Adapter",
+            "term": "Адаптер (Adapter)",
             "definition": "Структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе",
             "category": "Структурные паттерны",
             "relations": [
@@ -107,7 +107,7 @@ def create_initial_data():
         },
         "composite": {
             "id": "composite",
-            "term": "Composite",
+            "term": "Компоновщик (Composite)",
             "definition": "Структурный паттерн проектирования, который позволяет сгруппировать объекты в древовидную структуру, а затем работать с ними так, как будто это единичный объект",
             "category": "Структурные паттерны",
             "relations": [
@@ -120,7 +120,7 @@ def create_initial_data():
         },
         "ast": {
             "id": "ast",
-            "term": "Abstract Syntax Tree (AST)",
+            "term": "Абстрактное синтаксическое дерево (AST)",
             "definition": "Древовидное представление абстрактной синтаксической структуры исходного кода, используемое в статическом анализе для распознавания паттернов проектирования",
             "category": "Анализ кода",
             "relations": [
@@ -138,9 +138,9 @@ def create_initial_data():
         },
         "gnn": {
             "id": "gnn",
-            "term": "Graph Neural Network (GNN)",
+            "term": "Графовая нейронная сеть (GNN)",
             "definition": "Класс нейронных сетей для обработки данных, представленных в виде графов, применяется для анализа AST и распознавания паттернов в коде",
-            "category": "Machine Learning",
+            "category": "Машинное обучение",
             "relations": [
                 {
                     "target_term_id": "embeddings",
@@ -156,9 +156,9 @@ def create_initial_data():
         },
         "embeddings": {
             "id": "embeddings",
-            "term": "Code Embeddings",
+            "term": "Кодовые вложения (Code Embeddings)",
             "definition": "Векторные представления фрагментов кода, полученные с помощью моделей машинного обучения (CodeLlama, DeepSeek Coder), используются для семантического анализа и распознавания паттернов",
-            "category": "Machine Learning",
+            "category": "Машинное обучение",
             "relations": [
                 {
                     "target_term_id": "feature_extraction",
@@ -169,7 +169,7 @@ def create_initial_data():
         },
         "static_analysis": {
             "id": "static_analysis",
-            "term": "Static Code Analysis",
+            "term": "Статический анализ кода (Static Code Analysis)",
             "definition": "Метод анализа программного кода без его выполнения, включающий построение AST, анализ зависимостей и извлечение структурных характеристик для распознавания паттернов проектирования",
             "category": "Анализ кода",
             "relations": [
@@ -182,20 +182,14 @@ def create_initial_data():
         },
         "feature_extraction": {
             "id": "feature_extraction",
-            "term": "Feature Extraction",
+            "term": "Извлечение признаков (Feature Extraction)",
             "definition": "Процесс извлечения признаков из исходного кода для последующего использования в ML-моделях распознавания паттернов, включает метрики кода, структурные характеристики и семантическую информацию",
-            "category": "Machine Learning",
-            "relations": [
-                {
-                    "target_term_id": "embeddings",
-                    "relation_type": "производит",
-                    "description": None
-                }
-            ]
+            "category": "Машинное обучение",
+            "relations": []
         },
         "gof_patterns": {
             "id": "gof_patterns",
-            "term": "GoF Design Patterns",
+            "term": "Паттерны проектирования GoF",
             "definition": "23 классических паттерна проектирования из книги Gang of Four, разделенные на три категории: порождающие, структурные и поведенческие паттерны",
             "category": "Паттерны проектирования",
             "relations": [
