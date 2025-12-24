@@ -29,6 +29,7 @@ export interface Term {
   definition: string;
   category?: string;
   relations: Relation[];
+  sources?: string[];
 }
 
 export interface TermsResponse {

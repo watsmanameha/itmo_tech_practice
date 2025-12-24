@@ -59,7 +59,7 @@ const TermModal: React.FC<TermModalProps> = ({ term, onClose }) => {
 
           {/* Relations */}
           {term.relations && term.relations.length > 0 && (
-            <div>
+            <div className="mb-6">
               <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
                 Связи ({term.relations.length})
               </h3>
@@ -91,9 +91,23 @@ const TermModal: React.FC<TermModalProps> = ({ term, onClose }) => {
             </div>
           )}
 
-          {(!term.relations || term.relations.length === 0) && (
-            <div className="text-center py-4 text-gray-400 text-sm">
-              Нет связей с другими терминами
+          {/* Sources */}
+          {term.sources && term.sources.length > 0 && (
+            <div>
+              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+                Источники ({term.sources.length})
+              </h3>
+              <div className="space-y-2">
+                {term.sources.map((source, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start p-3 bg-blue-50 rounded-lg"
+                  >
+                    <span className="text-blue-600 font-semibold mr-2 flex-shrink-0">{index + 1}.</span>
+                    <p className="text-sm text-gray-700 leading-relaxed">{source}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>

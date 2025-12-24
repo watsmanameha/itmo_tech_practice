@@ -29,6 +29,7 @@ class TermBase(BaseModel):
     definition: str = Field(..., description="Определение термина", min_length=1)
     category: Optional[str] = Field(None, description="Категория термина")
     relations: List[Relation] = Field(default_factory=list, description="Связи с другими терминами")
+    sources: List[str] = Field(default_factory=list, description="Список источников (URL)")
 
 
 class TermCreate(TermBase):

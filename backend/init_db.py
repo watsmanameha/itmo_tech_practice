@@ -20,6 +20,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "abstract_factory": {
@@ -38,6 +42,10 @@ def create_initial_data():
                     "relation_type": "связан с",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "factory_method": {
@@ -51,6 +59,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "strategy": {
@@ -64,6 +76,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "observer": {
@@ -77,6 +93,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "decorator": {
@@ -90,6 +110,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "adapter": {
@@ -103,6 +127,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "composite": {
@@ -116,6 +144,10 @@ def create_initial_data():
                     "relation_type": "является частью",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268."
             ]
         },
         "ast": {
@@ -134,6 +166,10 @@ def create_initial_data():
                     "relation_type": "преобразуется в",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Spinellis D. Code Reading: The Open Source Perspective. – Addison-Wesley, 2003. – 512 с.",
+                "Mou L., Li G., Zhang L., Wang T., Jin Z. Convolutional Neural Networks over Tree Structures for Programming Language Processing // AAAI. – 2016. – С. 1287–1293."
             ]
         },
         "gnn": {
@@ -152,6 +188,10 @@ def create_initial_data():
                     "relation_type": "используется в",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Mou L., Li G., Zhang L., Wang T., Jin Z. Convolutional Neural Networks over Tree Structures for Programming Language Processing // AAAI. – 2016. – С. 1287–1293.",
+                "Zhang Y., Wang H., et al. A survey on deep learning-based software vulnerability detection // IEEE Access. – 2020. – Т. 7. – С. 103251–103272."
             ]
         },
         "embeddings": {
@@ -165,6 +205,11 @@ def create_initial_data():
                     "relation_type": "является результатом",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Alon U., Zilberstein M., Levy O., Yahav E. code2vec: Learning Distributed Representations of Code // POPL. – 2019.",
+                "Vaswani A., Shazeer N., Parmar N., et al. Attention is All You Need // Proc. NeurIPS. – 2017.",
+                "Devlin J., Chang M. W., Lee K., Toutanova K. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding // NAACL. – 2019."
             ]
         },
         "static_analysis": {
@@ -178,6 +223,11 @@ def create_initial_data():
                     "relation_type": "включает в себя",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Spinellis D. Code Reading: The Open Source Perspective. – Addison-Wesley, 2003. – 512 с.",
+                "Poshyvanyk D., Marcus A. The Conceptual Cohesion of Classes // ICSE. – 2006. – С. 320–329.",
+                "Tsantalis N., Chatzigeorgiou A. Identification of Move Method Refactoring Opportunities // IEEE Trans. Software Eng. – 2011."
             ]
         },
         "feature_extraction": {
@@ -185,7 +235,12 @@ def create_initial_data():
             "term": "Извлечение признаков (Feature Extraction)",
             "definition": "Процесс извлечения признаков из исходного кода для последующего использования в ML-моделях распознавания паттернов, включает метрики кода, структурные характеристики и семантическую информацию",
             "category": "Машинное обучение",
-            "relations": []
+            "relations": [],
+            "sources": [
+                "Allamanis M., Barr E. T., Bird C., Sutton C. Learning natural coding conventions // Proc. of the 22nd ACM SIGSOFT Int. Symp. on Foundations of Software Engineering. – 2014. – С. 281–293.",
+                "Gu X., Zhang H., Kim S., Kim K. Deep Code Search // ICSE. – 2018. – С. 933–944.",
+                "Reiss S. P. Semantics-based code search // ICSE. – 2009. – С. 243–253."
+            ]
         },
         "gof_patterns": {
             "id": "gof_patterns",
@@ -198,6 +253,11 @@ def create_initial_data():
                     "relation_type": "распознается через",
                     "description": None
                 }
+            ],
+            "sources": [
+                "Gamma E., Helm R., Johnson R., Vlissides J. Design Patterns: Elements of Reusable Object-Oriented Software. – Addison-Wesley, 1994. – 395 с.",
+                "Ferreira F., Vale D., Saraiva J., Cruz D. Detection of Design Patterns in Java Projects Using Static Analysis and Machine Learning // IEEE Access. – 2021. – Т. 9. – С. 147254–147268.",
+                "Bajracharya S. K., Lopes C. Sourcerer: Infrastructure for Large-scale Collection and Analysis of Open-source Code // Sci. Comput. Program. – 2009."
             ]
         }
     }
