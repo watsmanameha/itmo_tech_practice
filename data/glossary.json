@@ -8,8 +8,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -25,13 +24,11 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         },
         {
           "target_term_id": "factory_method",
-          "relation_type": "связан с",
-          "description": null
+          "relation_type": "связан с"
         }
       ],
       "sources": [
@@ -47,8 +44,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -64,8 +60,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -81,8 +76,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -98,8 +92,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -115,8 +108,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -132,8 +124,7 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью",
-          "description": null
+          "relation_type": "является частью"
         }
       ],
       "sources": [
@@ -149,13 +140,11 @@
       "relations": [
         {
           "target_term_id": "static_analysis",
-          "relation_type": "используется в",
-          "description": null
+          "relation_type": "используется в"
         },
         {
           "target_term_id": "gnn",
-          "relation_type": "преобразуется в",
-          "description": null
+          "relation_type": "преобразуется в"
         }
       ],
       "sources": [
@@ -171,13 +160,11 @@
       "relations": [
         {
           "target_term_id": "embeddings",
-          "relation_type": "создает",
-          "description": null
+          "relation_type": "создает"
         },
         {
           "target_term_id": "static_analysis",
-          "relation_type": "используется в",
-          "description": null
+          "relation_type": "используется в"
         }
       ],
       "sources": [
@@ -187,14 +174,13 @@
     },
     "embeddings": {
       "id": "embeddings",
-      "term": "Кодовые вложения (Code Embeddings)",
+      "term": "Векторные представления (Code Embeddings)",
       "definition": "Векторные представления фрагментов кода, полученные с помощью моделей машинного обучения (CodeLlama, DeepSeek Coder), используются для семантического анализа и распознавания паттернов",
       "category": "Машинное обучение",
       "relations": [
         {
           "target_term_id": "feature_extraction",
-          "relation_type": "является результатом",
-          "description": null
+          "relation_type": "является результатом"
         }
       ],
       "sources": [
@@ -211,8 +197,7 @@
       "relations": [
         {
           "target_term_id": "feature_extraction",
-          "relation_type": "включает в себя",
-          "description": null
+          "relation_type": "включает в себя"
         }
       ],
       "sources": [
@@ -241,8 +226,7 @@
       "relations": [
         {
           "target_term_id": "static_analysis",
-          "relation_type": "распознается через",
-          "description": null
+          "relation_type": "распознается через"
         }
       ],
       "sources": [
