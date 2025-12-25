@@ -12,7 +12,8 @@ RUN npm install
 # Copy source code
 COPY . .
 
-# Build the app
+# Build the app (with base path as '/')
+ENV NODE_ENV=development
 RUN npm run build
 
 # Production stage

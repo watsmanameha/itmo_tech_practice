@@ -14,6 +14,13 @@ class RelationType(str, Enum):
     IS_SUBTASK = "является подзадачей"
     IS_SUBPROPERTY = "является подсвойством"
     IS_PROPERTY = "имеет свойство"
+    RELATED_TO = "связан с"
+    USED_IN = "используется в"
+    TRANSFORMS_TO = "преобразуется в"
+    CREATES = "создает"
+    IS_RESULT_OF = "является результатом"
+    PRODUCES = "производит"
+    RECOGNIZED_BY = "распознается через"
 
 
 class Relation(BaseModel):

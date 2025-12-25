@@ -8,7 +8,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -24,11 +25,13 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         },
         {
           "target_term_id": "factory_method",
-          "relation_type": "связан с"
+          "relation_type": "связан с",
+          "description": null
         }
       ],
       "sources": [
@@ -44,7 +47,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -60,7 +64,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -76,7 +81,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -92,7 +98,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -108,7 +115,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -124,7 +132,8 @@
       "relations": [
         {
           "target_term_id": "gof_patterns",
-          "relation_type": "является частью"
+          "relation_type": "является частью",
+          "description": null
         }
       ],
       "sources": [
@@ -140,11 +149,13 @@
       "relations": [
         {
           "target_term_id": "static_analysis",
-          "relation_type": "используется в"
+          "relation_type": "используется в",
+          "description": null
         },
         {
           "target_term_id": "gnn",
-          "relation_type": "преобразуется в"
+          "relation_type": "преобразуется в",
+          "description": null
         }
       ],
       "sources": [
@@ -160,11 +171,13 @@
       "relations": [
         {
           "target_term_id": "embeddings",
-          "relation_type": "создает"
+          "relation_type": "создает",
+          "description": null
         },
         {
           "target_term_id": "static_analysis",
-          "relation_type": "используется в"
+          "relation_type": "используется в",
+          "description": null
         }
       ],
       "sources": [
@@ -180,7 +193,8 @@
       "relations": [
         {
           "target_term_id": "feature_extraction",
-          "relation_type": "является результатом"
+          "relation_type": "является результатом",
+          "description": null
         }
       ],
       "sources": [
@@ -197,7 +211,8 @@
       "relations": [
         {
           "target_term_id": "feature_extraction",
-          "relation_type": "включает в себя"
+          "relation_type": "включает в себя",
+          "description": null
         }
       ],
       "sources": [
@@ -226,7 +241,8 @@
       "relations": [
         {
           "target_term_id": "static_analysis",
-          "relation_type": "распознается через"
+          "relation_type": "распознается через",
+          "description": null
         }
       ],
       "sources": [

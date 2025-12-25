@@ -9,11 +9,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копируем код приложения
 COPY app ./app
 
-# Создаем директорию для данных
+# Создаем директорию для данных (если вдруг glossary.json отсутствует)
 RUN mkdir -p app/data
-
-# Копируем файл базы данных если он есть
-COPY app/data/glossary.json ./app/data/glossary.json 2>/dev/null || true
 
 EXPOSE 8000
 

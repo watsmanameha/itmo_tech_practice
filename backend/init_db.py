@@ -17,8 +17,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -34,13 +33,11 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 },
                 {
                     "target_term_id": "factory_method",
-                    "relation_type": "связан с",
-                    "description": None
+                    "relation_type": "связан с"
                 }
             ],
             "sources": [
@@ -56,8 +53,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -73,8 +69,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -90,8 +85,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -107,8 +101,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -124,8 +117,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -141,8 +133,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "gof_patterns",
-                    "relation_type": "является частью",
-                    "description": None
+                    "relation_type": "является частью"
                 }
             ],
             "sources": [
@@ -158,13 +149,11 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "static_analysis",
-                    "relation_type": "используется в",
-                    "description": None
+                    "relation_type": "используется в"
                 },
                 {
                     "target_term_id": "gnn",
-                    "relation_type": "преобразуется в",
-                    "description": None
+                    "relation_type": "преобразуется в"
                 }
             ],
             "sources": [
@@ -180,13 +169,11 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "embeddings",
-                    "relation_type": "создает",
-                    "description": None
+                    "relation_type": "создает"
                 },
                 {
                     "target_term_id": "static_analysis",
-                    "relation_type": "используется в",
-                    "description": None
+                    "relation_type": "используется в"
                 }
             ],
             "sources": [
@@ -196,14 +183,13 @@ def create_initial_data():
         },
         "embeddings": {
             "id": "embeddings",
-            "term": "Кодовые вложения (Code Embeddings)",
+            "term": "Векторные представления (Code Embeddings)",
             "definition": "Векторные представления фрагментов кода, полученные с помощью моделей машинного обучения (CodeLlama, DeepSeek Coder), используются для семантического анализа и распознавания паттернов",
             "category": "Машинное обучение",
             "relations": [
                 {
                     "target_term_id": "feature_extraction",
-                    "relation_type": "является результатом",
-                    "description": None
+                    "relation_type": "является результатом"
                 }
             ],
             "sources": [
@@ -220,8 +206,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "feature_extraction",
-                    "relation_type": "включает в себя",
-                    "description": None
+                    "relation_type": "включает в себя"
                 }
             ],
             "sources": [
@@ -250,8 +235,7 @@ def create_initial_data():
             "relations": [
                 {
                     "target_term_id": "static_analysis",
-                    "relation_type": "распознается через",
-                    "description": None
+                    "relation_type": "распознается через"
                 }
             ],
             "sources": [
