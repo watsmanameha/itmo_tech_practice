@@ -188,9 +188,9 @@ itmo_tech_practice/
 
 ## Контакт
 
-**Автор:** Евгений Джулай
-**Университет:** ИТМО
-**Telegram:** [@wrxnguser](https://t.me/wrxnguser)
+- **Автор:** Евгений Джулай
+- **Университет:** ИТМО
+- **Telegram:** [@wrxnguser](https://t.me/wrxnguser)
 
 ## Дополнительная информация
 
